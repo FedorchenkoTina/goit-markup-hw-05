@@ -443,6 +443,32 @@ body {
   fill: #ffffff;
 }
 
+.form {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -573,3 +599,9 @@ body {
   cursor: pointer;
 }
 
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
