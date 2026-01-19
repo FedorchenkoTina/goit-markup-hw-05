@@ -379,7 +379,7 @@ body {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  justify-content: space-between;
   align-items: baseline;
 }
 
