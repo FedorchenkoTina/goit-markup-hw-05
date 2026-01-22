@@ -559,9 +559,6 @@ body {
   outline: none;
 
   transition: border-color 250ms;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .modal-input:focus {
@@ -591,6 +588,11 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms;
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-submit-btn {
@@ -612,4 +614,30 @@ body {
   align-items: center;
   gap: 8px;
   font-size: 12px;
+  cursor: pointer;
 }
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background-color: #404bbf;
+  border: none;
+}
+
+.checkbox-custom svg {
+  opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-custom svg {
+  opacity: 1;
+}
+
