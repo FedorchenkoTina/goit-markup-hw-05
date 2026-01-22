@@ -457,7 +457,8 @@
       <input type="email" 
       class="form-input" 
       name="subscribe" 
-      placeholder="E-mail">
+      placeholder="E-mail"
+      required>
     </label>
     <button type="submit" class="subscribe-btn">Subscribe
 <svg class="subscribe-icon" width="24" height="24">
@@ -524,22 +525,21 @@
       <label class="modal-label" for="user-comment">
         <span class="modal-label-text">Comment</span>
         </label>
-        <textarea class="modal-textarea"
+        <textarea 
+        class="modal-textarea"
         id="user-comment"
         name="user-comment"
-        placeholder="Text input">          
-        </textarea>
-
+        placeholder="Text input"></textarea>
       <label class="modal-checkbox">
         <input type="checkbox" 
-        class="checkbox-input" 
+        class="checkbox-input visually-hidden" 
         name="policy">
         <span class="checkbox-custom">
         <svg width="16" height="16">
           <use href="./images/icons.svg#icon-yes"></use>
         </svg>
         </span>
-        I accept the terms and conditions
+        I accept the terms and conditions of the
         <a href="#" class="policy-link">Privacy Policy</a>
       </label>
 
