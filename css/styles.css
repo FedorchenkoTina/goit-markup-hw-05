@@ -453,7 +453,7 @@ body {
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .subscribe-icon {
@@ -548,7 +548,7 @@ body {
   background-color: #e7e9fc;
   border: none;
   cursor: pointer;
-  transition: background-color 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -588,7 +588,7 @@ body {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color 250ms;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -613,7 +613,7 @@ body {
   transform: translateY(-50%);
   fill: #2e2f42;
 
-  transition: fill 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-input-icon {
@@ -724,6 +724,8 @@ text-decoration: underline;
 }
 
 .checkbox-custom svg {
+  width: 10px;
+  height: 8px;
   fill: #f4f4fd;
   opacity: 0;
 }
